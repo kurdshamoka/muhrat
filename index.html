@@ -16,6 +16,8 @@
   ============================================ -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
 
             <!-- Vendor CSS (Bootstrap & Icon Font) -->
@@ -43,54 +45,42 @@
         <!-- Header Section Start From Here -->
         <header class="header-wrapper">
             <!-- Header Nav Start -->
-            <div class="header-nav">
-                <div class="container">
-                    <div class="header-nav-wrapper d-md-flex d-sm-flex d-xl-flex d-lg-flex justify-content-between">
-                        <div class="header-static-nav">
-                            <p>Welcome to Muhrat Al Sheikh</p>
-                        </div>
-                        <div class="header-menu-nav">
-                            <ul class="menu-nav">
-                                <li>
-                                    <div class="dropdown">
-                                        <button type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setting <i class="ion-ios-arrow-down"></i></button>
+          
 
-                                        <ul class="dropdown-menu animation slideDownIn" aria-labelledby="dropdownMenuButton">
-                                            <li><a href="my-account.html">My account</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="login.html">Sign in</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                
-                                <li class="pr-0">
-                                    <div class="dropdown">
-                                        <button type="button" id="dropdownMenuButton-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="assets/images/flag/1.jpg" alt="" /> English <i class="ion-ios-arrow-down"></i>
-                                        </button>
 
-                                        <ul class="dropdown-menu animation slideDownIn" aria-labelledby="dropdownMenuButton-3">
-                                            <li>
-                                                <a href="#"><img src="assets/images/flag/1.jpg" alt="" /> English</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="assets/images/flag/2.jpg" alt="" /> Français</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+
+          <div class="header-nav">
+            <div class="container">
+                <div class="header-nav-wrapper d-flex justify-content-between align-items-center">
+                    <div class="header-static-nav">
+                        <p> welecome to Muhrat Al Sheikh  </p>
+                    </div>
+                    <div class="header-menu-nav">
+                        <ul class="menu-nav">
+                            <li class="pl-0">
+                                <div class="dropdown">
+                                    <button type="button" id="languageDropdown" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./img/logo/translate.png" alt="English" /> English <i class="ion-ios-arrow-down"></i>
+                                    </button>
+                            
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                        <li><a class="dropdown-item" href="./Kurdish.html" lang="ar">Kurdish</a></li>
+                                        <li><a class="dropdown-item" href="./Arabic.html" lang="en">Arabic</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
             <!-- Header Nav End -->
             <div class="header-top bg-white ptb-30px d-xl-block d-none sticky-nav">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 d-flex">
                             <div class="mobile-menu-toggle home-2">
-                                <a href="#offcanvas-mobile-menu" class="offcanvas-toggle">
+                                <a href="#" class="offcanvas-toggle">
                                     <svg viewBox="0 0 800 600">
                                         <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
                                         <path d="M300,320 L540,320" id="middle"></path>
@@ -99,7 +89,7 @@
                                 </a>
                             </div>
                             <div class="logo">
-                                <a href="index.html"><img class="img-responsive" src="assets/images/logo/logo copy.png" alt="logo copy.png" /></a>
+                                <a href="#"><img class="img-responsive" src="assets/images/logo/logo copy.png" alt="logo copy.png" /></a>
                             </div>
                         </div>
                         <div class="col-md-9 align-self-center">
@@ -336,7 +326,7 @@
                                 <div class="hero-slider swiper-container">
                                     <div class="swiper-wrapper">
                                         <!-- Single Slider  -->
-                                        <div class="swiper-slide bg-img d-flex" style="background-image: url(./img/main/web\ 1.png);">
+                                        <div class="swiper-slide bg-img d-flex"  style="background-image: url(./img/main/web\ 1.png);">
                                             <div class="container align-self-center">
                                                
                                             </div>
@@ -358,10 +348,10 @@
                         <div class="col-lg-3">
                             <div class="banner-area banner-area-2">
                                 <div class="banner-wrapper mb-15px">
-                                    <a href="#"><img src="./img/main/web 3,..png" alt="" /></a>
+                                    <a href="#"data-bs-toggle="modal" data-bs-target="#product4"><img src="./img/main/web 3,..png" alt="" /></a>
                                 </div>
                                 <div class="banner-wrapper">
-                                    <a href="#"><img src="./img/main/web 4 .2.png" alt="" /></a>
+                                    <a href="#"data-bs-toggle="modal" data-bs-target="#product13"><img src="./img/main/web 4 .2.png" alt="" /></a>
                                 </div>
                             </div>
                         </div>
@@ -442,24 +432,28 @@
                 <!-- Header Logo End -->
 
                 <!-- Header Tools Start ----   -->
-                <div class="col-auto">
-                    <div class="header-tools justify-content-end">
-                        <div class="cart-info d-flex align-self-center">
-                            <a href="compare.html" class="shuffle d-xs-none" data-number="3"><i class="icon-shuffle"></i></a>
-                            <a href="#offcanvas-wishlist" class="heart offcanvas-toggle d-xs-none" data-number="3"><i class="icon-heart"></i></a>
-                            <a href="#offcanvas-cart" class="bag offcanvas-toggle" data-number="3"><i class="icon-bag"></i><span></span></a>
-                        </div>
-                        <div class="mobile-menu-toggle">
-                            <a href="#offcanvas-mobile-menu" class="offcanvas-toggle">
-                                <svg viewBox="0 0 800 600">
-                                    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
-                                    <path d="M300,320 L540,320" id="middle"></path>
-                                    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <div class="mobile-header-tools d-block d-lg-none">
+                  <div class="header-tools justify-content-between">
+                      <div class="cart-info d-flex align-self-center">
+                          <a href="#offcanvas-wishlist" class="heart offcanvas-toggle" data-number="3" title="دڵخوازەکان"><i class="icon-heart"></i></a>
+                          <a href="#offcanvas-cart" class="bag offcanvas-toggle" data-number="3" title="سەبەتەی کڕین"><i class="icon-bag"></i><span></span></a>
+                      </div>
+                      <div class="mobile-menu-toggle">
+                          <a href="#offcanvas-mobile-menu" class="offcanvas-toggle" title="مێنیوی مۆبایل">
+                              <svg viewBox="0 0 800 600">
+                                  <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+                                  <path d="M300,320 L540,320" id="middle"></path>
+                                  <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- ئامرازەکانی سەرەوە تەنها بۆ دێسکتۆپ (ئەگەر پێویست بێت) -->
+              <div class="desktop-header-tools d-none d-lg-block">
+                  <!-- ناوەڕۆکی ئامرازەکانی سەرەوە بۆ دێسکتۆپ لێرە دابنێ (ئەگەر هەبێت) -->
+              </div>
                 <!-- Header Tools End -->
 
             </div>
@@ -678,7 +672,7 @@
                                 <li><a href="#"> Smart Home Appliances</a></li>
                                 <li class="hidden"><a href="#">Projectors</a></li>
                                 <li>
-                                    <a href="#" id="more-btn"><i class="ion-ios-plus-empty" aria-hidden="true"></i> More Categories</a>
+                                    <a  id="more-btn"><i class="ion-ios-plus-empty" aria-hidden="true"></i> More Categories</a>
                                 </li>
                             </ul>
                         </nav>
@@ -744,27 +738,27 @@
             <div class="body customScroll">
                 <ul class="minicart-product-list">
                     <li>
-                        <a href="single-product.html" class="image"><img src="./img/consule/pss5cc1.jpg" alt="Cart product Image"></a>
+                        <a  class="image"><img src="./img/consule/pss5cc1.jpg" alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="single-product.html" class="title"> PS5™ Slim Console | PlayStation® (US)</a>
+                            <a  class="title"> PS5™ Slim Console | PlayStation® (US)</a>
                             <span class="quantity-price">1 x <span class="amount"></span></span>
-                            <a href="#" class="remove">×</a>
+                            <a  class="remove">×</a>
                         </div>
                     </li>
                     <li>
-                        <a href="single-product.html" class="image"><img src="./img/watch/ultra2,1cc.jpg" alt="Cart product Image"></a>
+                        <a  class="image"><img src="./img/watch/ultra2,1cc.jpg" alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="single-product.html" class="title">Apple Watch Ultra 2</a>
+                            <a  class="title">Apple Watch Ultra 2</a>
                             <span class="quantity-price">1 x <span class="amount"></span></span>
-                            <a href="#" class="remove">×</a>
+                            <a  class="remove">×</a>
                         </div>
                     </li>
                     <li>
-                        <a href="single-product.html" class="image"><img src="./img/headset/apple1cc.jpg" alt="Cart product Image"></a>
+                        <a  class="image"><img src="./img/headset/apple1cc.jpg" alt="Cart product Image"></a>
                         <div class="content">
-                            <a href="single-product.html" class="title">Apple AirPods Max Wireless Over-Ear Headphones Blue</a>
+                            <a  class="title">Apple AirPods Max Wireless Over-Ear Headphones Blue</a>
                             <span class="quantity-price">1 x <span class="amount"></span></span>
-                            <a href="#" class="remove">×</a>
+                            <a  class="remove">×</a>
                         </div>
                     </li>
                 </ul>
@@ -772,8 +766,8 @@
             <div class="foot">
               <br>
                 <div class="buttons">
-                    <a href="#" class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
-                    <a href="#" class="btn btn-outline-dark current-btn">checkout</a>
+                    <a  class="btn btn-dark btn-hover-primary mb-30px">view cart</a>
+                    <a  class="btn btn-outline-dark current-btn">checkout</a>
                 </div>
                 <p class="minicart-message">Free Shipping on All Orders Over 100!</p>
             </div>
@@ -783,118 +777,118 @@
 
     <!-- OffCanvas Search Start -->
     <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
-        <div class="inner customScroll">
-            <div class="head">
-                <span class="title">&nbsp;</span>
-                <button class="offcanvas-close">×</button>
-            </div>
-            <div class="offcanvas-menu-search-form">
-                <form action="#">
-                    <input type="text" placeholder="Search...">
-                    <button><i class="icon-magnifier"></i></button>
-                </form>
-            </div>
-            <div class="offcanvas-menu">
-                <ul>
-                    <li><a href="#"><span class="menu-text">Home</span></a>
-                        <ul class="sub-menu">
-                            <li><a href="index.html"><span class="menu-text">Home 1</span></a></li>
-                            <li><a href="index-2.html"><span class="menu-text">Home 2</span></a></li>
-                            <li> <a href="index-3.html"><span class="menu-text">Home 3</span></a></li>
-                            <li><a href="index-4.html"><span class="menu-text">Home 4</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><span class="menu-text">Shop</span></a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="#"><span class="menu-text">Shop Grid</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="shop-3-column.html">Shop Grid 3 Column</a></li>
-                                    <li><a href="shop-4-column.html">Shop Grid 4 Column</a></li>
-                                    <li><a href="shop-left-sidebar.html">Shop Grid Left Sidebar</a></li>
-                                    <li><a href="shop-right-sidebar.html">Shop Grid Right Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-text">Shop List</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="shop-list.html">Shop List</a></li>
-                                    <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a></li>
-                                    <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-text">Shop Single</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="single-product.html">Shop Single</a></li>
-                                    <li><a href="single-product-variable.html">Shop Variable</a></li>
-                                    <li><a href="single-product-affiliate.html">Shop Affiliate</a></li>
-                                    <li><a href="single-product-group.html">Shop Group</a></li>
-                                    <li><a href="single-product-tabstyle-2.html">Shop Tab 2</a></li>
-                                    <li><a href="single-product-tabstyle-3.html">Shop Tab 3</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="menu-text">Shop Single</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="single-product-slider.html">Shop Slider</a></li>
-                                    <li><a href="single-product-gallery-left.html">Shop Gallery Left</a></li>
-                                    <li><a href="single-product-gallery-right.html">Shop Gallery Right</a></li>
-                                    <li><a href="single-product-sticky-left.html">Shop Sticky Left</a></li>
-                                    <li><a href="single-product-sticky-right.html">Shop Sticky Right</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><span class="menu-text">Pages</span></a>
-                        <ul class="sub-menu">
-                            <li><a href="about.html">About Page</a></li>
-                            <li><a href="cart.html">Cart Page</a></li>
-                            <li><a href="checkout.html">Checkout Page</a></li>
-                            <li><a href="compare.html">Compare Page</a></li>
-                            <li><a href="login.html">Login & Register Page</a></li>
-                            <li><a href="my-account.html">Account Page</a></li>
-                            <li><a href="wishlist.html">Wishlist Page</a></li>
-                                            <li><a href="thank-you-page.html">Thank You Page</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><span class="menu-text">Blog</span></a>
-                        <ul class="sub-menu">
-                            <li><a href="#"><span class="menu-text">Blog Grid</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a></li>
-                                    <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><span class="menu-text">Blog List</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
-                                    <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#"><span class="menu-text">Blog Single</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog-single-left-sidebar.html">Blog Single Left Sidebar</a></li>
-                                    <li><a href="blog-single-right-sidebar.html">Blog Single Right Sidbar</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="offcanvas-buttons mt-30px">
-                <div class="header-tools d-flex">
-                    <div class="cart-info d-flex align-self-center">
-                        <a href="my-account.html" class="user"><i class="icon-user"></i></a>
-                        <a href="wishlist.html" data-number="3"><i class="icon-heart"></i></a>
-                        <a href="cart.html" data-number="3"><i class="icon-bag"></i></a>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-    </div>
+      <div class="inner customScroll">
+          <div class="head">
+              <span class="title">&nbsp;</span>
+              <button class="offcanvas-close">×</button>
+          </div>
+          <div class="offcanvas-menu-search-form">
+              <form action="#">
+                  <input type="text" placeholder="Search...">
+                  <button><i class="icon-magnifier"></i></button>
+              </form>
+          </div>
+          <div class="offcanvas-menu">
+              <ul>
+                  <li><a href="#"><span class="menu-text">Home</span></a>
+                      <ul class="sub-menu">
+                          <li><a href="#"><span class="menu-text">Home 1</span></a></li>
+                          <li><a href="#"><span class="menu-text">Home 2</span></a></li>
+                          <li> <a href="#"><span class="menu-text">Home 3</span></a></li>
+                          <li><a href="#"><span class="menu-text">Home 4</span></a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#"><span class="menu-text">Shop</span></a>
+                      <ul class="sub-menu">
+                          <li>
+                              <a href="#"><span class="menu-text">Shop Grid</span></a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Shop Grid 3 Column</a></li>
+                                  <li><a href="#">Shop Grid 4 Column</a></li>
+                                  <li><a href="#">Shop Grid Left Sidebar</a></li>
+                                  <li><a href="#">Shop Grid Right Sidebar</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#"><span class="menu-text">Shop List</span></a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Shop List</a></li>
+                                  <li><a href="#">Shop List Left Sidebar</a></li>
+                                  <li><a href="#">Shop List Right Sidebar</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#"><span class="menu-text">Shop Single</span></a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Shop Single</a></li>
+                                  <li><a href="#">Shop Variable</a></li>
+                                  <li><a href="#">Shop Affiliate</a></li>
+                                  <li><a href="#">Shop Group</a></li>
+                                  <li><a href="#">Shop Tab 2</a></li>
+                                  <li><a href="#">Shop Tab 3</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#"><span class="menu-text">Shop Single</span></a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Shop Slider</a></li>
+                                  <li><a href="#">Shop Gallery Left</a></li>
+                                  <li><a href="#">Shop Gallery Right</a></li>
+                                  <li><a href="#">Shop Sticky Left</a></li>
+                                  <li><a href="#">Shop Sticky Right</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li><a href="#"><span class="menu-text">Pages</span></a>
+                      <ul class="sub-menu">
+                          <li><a href="#">About Page</a></li>
+                          <li><a href="#">Cart Page</a></li>
+                          <li><a href="#">Checkout Page</a></li>
+                          <li><a href="#">Compare Page</a></li>
+                          <li><a href="#">Login & Register Page</a></li>
+                          <li><a href="#">Account Page</a></li>
+                          <li><a href="#">Wishlist Page</a></li>
+                                          <li><a href="#">Thank You Page</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#"><span class="menu-text">Blog</span></a>
+                      <ul class="sub-menu">
+                          <li><a href="#"><span class="menu-text">Blog Grid</span></a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Blog Grid Left Sidebar</a></li>
+                                  <li><a href="#">Blog Grid Right Sidebar</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#"><span class="menu-text">Blog List</span></a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Blog List Left Sidebar</a></li>
+                                  <li><a href="#">Blog List Right Sidebar</a></li>
+                              </ul>
+                          </li>
+                          <li><a href="#"><span class="menu-text">Blog Single</span></a>
+                              <ul class="sub-menu">
+                                  <li><a href="#">Blog Single Left Sidebar</a></li>
+                                  <li><a href="#">Blog Single Right Sidbar</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="offcanvas-buttons mt-30px">
+              <div class="header-tools d-flex">
+                  <div class="cart-info d-flex align-self-center">
+                      <a href="#" class="user"><i class="icon-user"></i></a>
+                      <a href="#" data-number="3"><i class="icon-heart"></i></a>
+                      <a href="#" data-number="3"><i class="icon-bag"></i></a>
+                  </div>
+              </div>
+          </div>
+         
+      </div>
+  </div>
     <!-- OffCanvas Search End -->
 
     <div class="offcanvas-overlay"></div>
@@ -932,10 +926,10 @@
                         <div class="col-lg-3">
                             <div class="banner-area">
                                 <div class="banner-wrapper mb-md-30px mb-lm-30px mb-sm-30px">
-                                    <a href="#"><img src="./img/main/web 3,. 2.png" alt="" /></a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#product4"><img src="./img/main/web 3,. 2.png" alt="" /></a>
                                 </div>
                                 <div class="banner-wrapper mb-0px">
-                                    <a href="#"><img src="./img/main/web 4.png" alt="" /></a>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#product13"><img src="./img/main/web 4.png" alt="" /></a>
                                 </div>
                             </div>
                         </div>
@@ -1020,7 +1014,7 @@
                                         
                                     </a>
                                     <div class="quick-view">
-                                        <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#product1">
+                                        <a class="quick_view"  data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#product1">
                                             <i class="icon-magnifier icons"></i>
                                         </a>
                                     </div>
@@ -1029,7 +1023,7 @@
                                     <li class="new">New</li>
                                 </ul>
                                 <div class="product-decs">
-                                    <a class="inner-link" href="#"><span>Air Pods </span></a>
+                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product1"><span>Air Pods </span></a>
                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product1">Apple AirPods Pro (2nd generation)</a></h2>
                                     <div class="rating-product">
                                         <i class="ion-android-star"></i>
@@ -1046,9 +1040,9 @@
                                 </div>
                                 <div class="add-to-link">
                                     <ul>
-                                        <li class="cart"><a class="cart-btn" href="#">ADD TO CART </a></li>
+                                        <li class="cart"><a class="cart-btn" >ADD TO CART </a></li>
                                         <li>
-                                            <a href="#"><i class="icon-heart"></i></a>
+                                            <a ><i class="icon-heart"></i></a>
                                         </li>
                                        
                                     </ul>
@@ -1072,7 +1066,7 @@
                                     <li class="new">New</li>
                                 </ul>
                                 <div class="product-decs">
-                                    <a class="inner-link" href="#"><span>Apple</span></a>
+                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product2"><span>Apple</span></a>
                                     <h2><a href="#" class="product-link" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#product2">Apple Vision Pro</a></h2>
                                     <div class="rating-product">
                                         <i class="ion-android-star"></i>
@@ -1085,12 +1079,12 @@
                                 </div>
                                 <div class="add-to-link">
                                     <ul>
-                                        <li class="cart"><a class="cart-btn" href="#">ADD TO CART </a></li>
+                                        <li class="cart"><a class="cart-btn" >ADD TO CART </a></li>
                                         <li>
-                                            <a href="#"><i class="icon-heart"></i></a>
+                                            <a ><i class="icon-heart"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="icon-shuffle"></i></a>
+                                            <a ><i class="icon-shuffle"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1113,7 +1107,7 @@
                                     <li class="new">New</li>
                                 </ul>
                                 <div class="product-decs">
-                                    <a class="inner-link" href="#"><span>Samsung</span></a>
+                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product3"><span>Samsung</span></a>
                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product3" >Samsung Galaxy Buds Plus, True Wireless Earbuds</a></h2>
                                     <div class="rating-product">
                                         <i class="ion-android-star"></i>
@@ -1126,12 +1120,12 @@
                                 </div>
                                 <div class="add-to-link">
                                     <ul>
-                                        <li class="cart"><a class="cart-btn" href="#">ADD TO CART </a></li>
+                                        <li class="cart"><a class="cart-btn" >ADD TO CART </a></li>
                                         <li>
-                                            <a href="#"><i class="icon-heart"></i></a>
+                                            <a ><i class="icon-heart"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="icon-shuffle"></i></a>
+                                            <a ><i class="icon-shuffle"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1155,7 +1149,7 @@
                                     <li class="new">New</li>
                                 </ul>
                                 <div class="product-decs">
-                                    <a class="inner-link" href="shop-4-column.html"><span>Apple</span></a>
+                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product4"><span>Apple</span></a>
                                     <h2><a href="single-product.html" class="product-link" data-bs-toggle="modal" data-bs-target="#product4 ">Apple AirPods Max Wireless Over-Ear Headphones Blue</a></h2>
                                     <div class="rating-product">
                                         <i class="ion-android-star"></i>
@@ -1168,12 +1162,12 @@
                                 </div>
                                 <div class="add-to-link">
                                     <ul>
-                                        <li class="cart"><a class="cart-btn" href="#">ADD TO CART </a></li>
+                                        <li class="cart"><a class="cart-btn" >ADD TO CART </a></li>
                                         <li>
-                                            <a href="#"><i class="icon-heart"></i></a>
+                                            <a ><i class="icon-heart"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="icon-shuffle"></i></a>
+                                            <a ><i class="icon-shuffle"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1196,7 +1190,7 @@
                                     <li class="new">New</li>
                                 </ul>
                                 <div class="product-decs">
-                                    <a class="inner-link" href="#"><span>Sony</span></a>
+                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product5"><span>Sony</span></a>
                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product5">WH-1000XM4 Wireless Noise Cancelling Headphones (Silver)
                                     </a></h2>
                                     <div class="rating-product">
@@ -1210,12 +1204,12 @@
                                 </div>
                                 <div class="add-to-link">
                                     <ul>
-                                        <li class="cart"><a class="cart-btn" href="#">ADD TO CART </a></li>
+                                        <li class="cart"><a class="cart-btn" >ADD TO CART </a></li>
                                         <li>
-                                            <a href="#"><i class="icon-heart"></i></a>
+                                            <a ><i class="icon-heart"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="icon-shuffle"></i></a>
+                                            <a ><i class="icon-shuffle"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1252,12 +1246,12 @@
                                 </div>
                                 <div class="add-to-link">
                                     <ul>
-                                        <li class="cart"><a class="cart-btn" href="#">ADD TO CART </a></li>
+                                        <li class="cart"><a class="cart-btn" >ADD TO CART </a></li>
                                         <li>
-                                            <a href="#"><i class="icon-heart"></i></a>
+                                            <a ><i class="icon-heart"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="icon-shuffle"></i></a>
+                                            <a ><i class="icon-shuffle"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1304,12 +1298,12 @@
                                 </div>
                                 <div class="add-to-link">
                                     <ul>
-                                        <li class="cart"><a class="cart-btn" href="#">ADD TO CART </a></li>
+                                        <li class="cart"><a class="cart-btn" >ADD TO CART </a></li>
                                         <li>
-                                            <a href="#"><i class="icon-heart"></i></a>
+                                            <a ><i class="icon-heart"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="icon-shuffle"></i></a>
+                                            <a ><i class="icon-shuffle"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1346,12 +1340,12 @@
                                 </div>
                                 <div class="add-to-link">
                                     <ul>
-                                        <li class="cart"><a class="cart-btn" href="#">ADD TO CART </a></li>
+                                        <li class="cart"><a class="cart-btn" >ADD TO CART </a></li>
                                         <li>
-                                            <a href="#"><i class="icon-heart"></i></a>
+                                            <a ><i class="icon-heart"></i></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="icon-shuffle"></i></a>
+                                            <a ><i class="icon-shuffle"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1447,7 +1441,7 @@
                                         </div>
                                     </div>
                                     <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Xaiaomi Watch</span></a>
+                                        <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product10"><span>Xaiaomi Watch</span></a>
                                         <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product10">Redmi Watch 3 Active Smart Watch
                                         </a></h2>
                                         <div class="rating-product">
@@ -1587,12 +1581,12 @@
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <div class="banner-wrapper">
-                            <a href="#"><img src="./img/main/Artboard 1.png" alt="" /></a>
+                            <a ><img src="./img/main/Artboard 1.png" alt="" /></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <div class="banner-wrapper">
-                            <a href="#"><img src="./img/main/Artboard 2.png" alt="" /></a>
+                            <a ><img src="./img/main/Artboard 2.png" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -1615,7 +1609,7 @@
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-4 mt-lm-55px">
                                 <div class="banner-wrapper">
-                                    <a href="#"><img src="./img/main/dd.png" alt="" /></a>
+                                    <a ><img src="./img/main/dd.png" alt="" /></a>
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-8">
@@ -1638,7 +1632,7 @@
                                                     <li class="new">New</li>
                                                 </ul>
                                                 <div class="product-decs">
-                                                    <a class="inner-link" href="#"><span>Consule</span></a>
+                                                    <a class="inner-link" href="#"  data-bs-toggle="modal" data-bs-target="#product15"><span>Consule</span></a>
                                                     <h2><a href="#" class="product-link " data-bs-toggle="modal" data-bs-target="#product15"> PS5™ Slim Console | PlayStation® (US) </a></h2>
                                                     <div class="rating-product">
                                                         <i class="ion-android-star"></i>
@@ -1651,12 +1645,12 @@
                                                 </div>
                                                 <div class="add-to-link">
                                                     <ul>
-                                                        <li class="cart"><a title="Add to cart" href="#"><i class="icon-bag"></i></a></li>
+                                                        <li class="cart"><a title="Add to cart" ><i class="icon-bag"></i></a></li>
                                                         <li>
-                                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                                            <a title="Add to wishlist" ><i class="icon-heart"></i></a>
                                                         </li>
                                                         <li>
-                                                            <a title="Add to compare" href="#"><i class="icon-shuffle"></i></a>
+                                                            <a title="Add to compare" ><i class="icon-shuffle"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1676,7 +1670,7 @@
                                                     <li class="new">New</li>
                                                 </ul>
                                                 <div class="product-decs">
-                                                    <a class="inner-link" href="#"><span>Consule</span></a>
+                                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product16"><span>Consule</span></a>
                                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product16">Xbox Series X 1TB SSD Console</a></h2>
                                                     <div class="rating-product">
                                                         <i class="ion-android-star"></i>
@@ -1689,12 +1683,12 @@
                                                 </div>
                                                 <div class="add-to-link">
                                                     <ul>
-                                                        <li class="cart"><a title="Add to cart" href="#"><i class="icon-bag"></i></a></li>
+                                                        <li class="cart"><a title="Add to cart" ><i class="icon-bag"></i></a></li>
                                                         <li>
-                                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                                            <a title="Add to wishlist" ><i class="icon-heart"></i></a>
                                                         </li>
                                                         <li>
-                                                            <a title="Add to compare" href="#"><i class="icon-shuffle"></i></a>
+                                                            <a title="Add to compare" ><i class="icon-shuffle"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1723,7 +1717,7 @@
                                                     <li class="new">New</li>
                                                 </ul>
                                                 <div class="product-decs">
-                                                    <a class="inner-link" href="#"><span>Controller</span></a>
+                                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product17"><span>Controller</span></a>
                                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product17">PlayStation DualSense Wireless Controller - Cobalt Blue
                                                     </a></h2>
                                                     <div class="rating-product">
@@ -1737,12 +1731,12 @@
                                                 </div>
                                                 <div class="add-to-link">
                                                     <ul>
-                                                        <li class="cart"><a title="Add to cart" href="#"><i class="icon-bag"></i></a></li>
+                                                        <li class="cart"><a title="Add to cart" ><i class="icon-bag"></i></a></li>
                                                         <li>
-                                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                                            <a title="Add to wishlist" ><i class="icon-heart"></i></a>
                                                         </li>
                                                         <li>
-                                                            <a title="Add to compare" href="#"><i class="icon-shuffle"></i></a>
+                                                            <a title="Add to compare" ><i class="icon-shuffle"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1762,7 +1756,7 @@
                                                     <li class="new">New</li>
                                                 </ul>
                                                 <div class="product-decs">
-                                                    <a class="inner-link" href="#"><span>COntroller</span></a>
+                                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product18"><span>COntroller</span></a>
                                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product18">Xbox Elite Series 2 Custom Soft Touch Controller Green</a></h2>
                                                     <div class="rating-product">
                                                         <i class="ion-android-star"></i>
@@ -1775,12 +1769,12 @@
                                                 </div>
                                                 <div class="add-to-link">
                                                     <ul>
-                                                        <li class="cart"><a title="Add to cart" href="#"><i class="icon-bag"></i></a></li>
+                                                        <li class="cart"><a title="Add to cart" ><i class="icon-bag"></i></a></li>
                                                         <li>
-                                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                                            <a title="Add to wishlist" ><i class="icon-heart"></i></a>
                                                         </li>
                                                         <li>
-                                                            <a title="Add to compare" href="#"><i class="icon-shuffle"></i></a>
+                                                            <a title="Add to compare" ><i class="icon-shuffle"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1803,7 +1797,7 @@
                                                     <li class="new">New</li>
                                                 </ul>
                                                 <div class="product-decs">
-                                                    <a class="inner-link" href="#"><span>STUDIO DESIGN</span></a>
+                                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product19"><span>Controller</span></a>
                                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product19">PlayStation DualSense Wireless Controller – Galactic Purple
                                                     </a></h2>
                                                     <div class="rating-product">
@@ -1817,12 +1811,12 @@
                                                 </div>
                                                 <div class="add-to-link">
                                                     <ul>
-                                                        <li class="cart"><a title="Add to cart" href="#"><i class="icon-bag"></i></a></li>
+                                                        <li class="cart"><a title="Add to cart" ><i class="icon-bag"></i></a></li>
                                                         <li>
-                                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                                            <a title="Add to wishlist" ><i class="icon-heart"></i></a>
                                                         </li>
                                                         <li>
-                                                            <a title="Add to compare" href="#"><i class="icon-shuffle"></i></a>
+                                                            <a title="Add to compare" ><i class="icon-shuffle"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1842,7 +1836,7 @@
                                                     <li class="new">New</li>
                                                 </ul>
                                                 <div class="product-decs">
-                                                    <a class="inner-link" href="#"><span>Controller</span></a>
+                                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product20"><span>Controller</span></a>
                                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product20">Xbox Elite Series 2 Custom Soft Touch Controller Orange</a></h2>
                                                     <div class="rating-product">
                                                         <i class="ion-android-star"></i>
@@ -1855,12 +1849,12 @@
                                                 </div>
                                                 <div class="add-to-link">
                                                     <ul>
-                                                        <li class="cart"><a title="Add to cart" href="#"><i class="icon-bag"></i></a></li>
+                                                        <li class="cart"><a title="Add to cart" ><i class="icon-bag"></i></a></li>
                                                         <li>
-                                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                                            <a title="Add to wishlist" ><i class="icon-heart"></i></a>
                                                         </li>
                                                         <li>
-                                                            <a title="Add to compare" href="#"><i class="icon-shuffle"></i></a>
+                                                            <a title="Add to compare" ><i class="icon-shuffle"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1883,7 +1877,7 @@
                                                     <li class="new">New</li>
                                                 </ul>
                                                 <div class="product-decs">
-                                                    <a class="inner-link" href="#"><span>Controller</span></a>
+                                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product21"><span>Controller</span></a>
                                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product21">PlayStation DualSense® Wireless Controller - Gray Camouflage
                                                     </a></h2>
                                                     <div class="rating-product">
@@ -1897,12 +1891,12 @@
                                                 </div>
                                                 <div class="add-to-link">
                                                     <ul>
-                                                        <li class="cart"><a title="Add to cart" href="#"><i class="icon-bag"></i></a></li>
+                                                        <li class="cart"><a title="Add to cart" ><i class="icon-bag"></i></a></li>
                                                         <li>
-                                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                                            <a title="Add to wishlist" ><i class="icon-heart"></i></a>
                                                         </li>
                                                         <li>
-                                                            <a title="Add to compare" href="#"><i class="icon-shuffle"></i></a>
+                                                            <a title="Add to compare" ><i class="icon-shuffle"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -1922,7 +1916,7 @@
                                                     <li class="new">New</li>
                                                 </ul>
                                                 <div class="product-decs">
-                                                    <a class="inner-link" href="#"><span>Controller</span></a>
+                                                    <a class="inner-link" href="#" data-bs-toggle="modal" data-bs-target="#product22"><span>Controller</span></a>
                                                     <h2><a href="#" class="product-link" data-bs-toggle="modal" data-bs-target="#product22">Xbox One Series X S Custom Soft Touch Controller Red</a></h2>
                                                     <div class="rating-product">
                                                         <i class="ion-android-star"></i>
@@ -1935,12 +1929,12 @@
                                                 </div>
                                                 <div class="add-to-link">
                                                     <ul>
-                                                        <li class="cart"><a title="Add to cart" href="#"><i class="icon-bag"></i></a></li>
+                                                        <li class="cart"><a title="Add to cart" ><i class="icon-bag"></i></a></li>
                                                         <li>
-                                                            <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
+                                                            <a title="Add to wishlist" ><i class="icon-heart"></i></a>
                                                         </li>
                                                         <li>
-                                                            <a title="Add to compare" href="#"><i class="icon-shuffle"></i></a>
+                                                            <a title="Add to compare" ><i class="icon-shuffle"></i></a>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -2275,7 +2269,7 @@
                             <div class="col-md-6 col-lg-4 mb-md-30px mb-lm-30px">
                                 <div class="single-wedge">
                                     <h4 class="footer-herading">ABOUT US</h4>
-                                    <p class="text-infor">We are a team of designers and developers that create high quality HTML template</p>
+                                    <p class="text-infor">We are a technology company that works in the best way</p>
                                     <div class="need-help">
                                         <p class="phone-info">
                                             NEED HELP?

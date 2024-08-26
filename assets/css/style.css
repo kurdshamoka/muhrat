@@ -6507,3 +6507,165 @@ offcanvas-menu > ul > li .menu-expand {
   opacity: 1;
   border: 2px solid #007bff;
 }
+
+
+.header-menu-nav {
+  position: relative;
+}
+
+.dropdown {
+  position: static;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: 100%;
+  margin-top: 5px;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* پشتگیری RTL */
+body[dir="rtl"] .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* ڕاستکردنەوەی ئاراستەی ئایکۆن لە دۆخی RTL */
+body[dir="rtl"] .ion-ios-arrow-down {
+  transform: rotate(180deg);
+}
+
+
+
+.mobile-header-tools {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.mobile-header-tools .header-tools {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-header-tools .cart-info a {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #333;
+}
+
+.mobile-header-tools .mobile-menu-toggle a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-header-tools .mobile-menu-toggle svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* ستایلی RTL بۆ زمانی کوردی */
+body[lang="ku"] .mobile-header-tools .cart-info {
+  direction: rtl;
+}
+
+body[lang="ku"] .mobile-header-tools .cart-info a:last-child {
+  margin-left: 0;
+}
+
+/* شاردنەوەی تەواوی بەشەکە لە دێسکتۆپ */
+@media (min-width: 992px) {
+  .mobile-header-tools {
+      display: none !important;
+  }
+}
+
+
+
+
+
+body[lang="ku"] .offcanvas-mobile-menu {
+  left: auto;
+  right: 0;
+  transform: translateX(100%);
+}
+
+body[lang="ku"] .offcanvas-mobile-menu.show {
+  transform: translateX(0);
+}
+
+body[lang="ku"] .offcanvas-mobile-menu .offcanvas-close {
+  right: auto;
+  left: 15px;
+}
+
+body[lang="ku"] .offcanvas-mobile-menu .offcanvas-menu ul li .sub-menu {
+  left: auto;
+  right: 100%;
+}
+
+body[lang="ku"] .offcanvas-mobile-menu .offcanvas-menu ul li .menu-expand {
+  right: auto;
+  left: 0;
+}
+
+body[lang="ku"] .offcanvas-mobile-menu .offcanvas-menu ul li a {
+  text-align: right;
+}
+
+body[lang="ku"] .offcanvas-mobile-menu .offcanvas-buttons .header-tools {
+  justify-content: flex-end;
+}
+
+.offcanvas-mobile-menu .inner {
+  padding: 20px;
+}
+
+.offcanvas-mobile-menu .offcanvas-menu ul li {
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.offcanvas-mobile-menu .offcanvas-menu ul li a {
+  display: block;
+  padding: 10px 0;
+}
+
+.offcanvas-mobile-menu .offcanvas-menu ul li .sub-menu {
+  display: none;
+  padding-left: 20px;
+}
+
+.offcanvas-mobile-menu .offcanvas-menu ul li.menu-open > .sub-menu {
+  display: block;
+}
+
+.offcanvas-mobile-menu .offcanvas-buttons .cart-info a {
+  font-size: 20px;
+  margin-left: 10px;
+}

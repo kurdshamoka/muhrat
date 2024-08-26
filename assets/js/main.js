@@ -22,6 +22,25 @@ $(function () {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
     });
 
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+        var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+            return new bootstrap.Dropdown(dropdownToggleEl)
+        })
+    
+        // گۆڕینی زمان
+        document.querySelectorAll('.dropdown-item').forEach(function(item) {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                var selectedLang = this.getAttribute('lang');
+                document.querySelector('#languageDropdown').innerHTML = this.innerHTML;
+                // لێرەدا دەتوانیت کۆدی گۆڕینی زمانی ماڵپەڕەکە زیاد بکەیت
+                console.log('زمان گۆڕدرا بۆ: ' + selectedLang);
+            });
+        });
+    });
+
     /*---------------------------
        Menu Fixed On Scroll Active
     ------------------------------ */
@@ -783,6 +802,25 @@ document.addEventListener('DOMContentLoaded', function() {
       myModal.show();
     });
   });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuItems = document.querySelectorAll('.offcanvas-menu ul li');
+    menuItems.forEach(item => {
+        if (item.querySelector('.sub-menu')) {
+            const expandBtn = document.createElement('span');
+            expandBtn.classList.add('menu-expand');
+            expandBtn.innerHTML = '+';
+            item.insertBefore(expandBtn, item.firstChild);
+            
+            expandBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('menu-open');
+                this.innerHTML = this.parentElement.classList.contains('menu-open') ? '-' : '+';
+            });
+        }
+    });
+});
 
 
 
