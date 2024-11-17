@@ -824,4 +824,60 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+function openQuickView() {
+    document.getElementById('quickViewModal').style.display = 'block';
+}
+
+// داخستنی مۆدەڵی کویک ڤیوو
+function closeQuickView() {
+    document.getElementById('quickViewModal').style.display = 'none';
+}
+
+// گۆڕینی وێنەی سەرەکی
+function changeImage(thumbnail, src) {
+    document.getElementById('mainImage').src = src;
+    // لابردنی کلاسی چالاک لە هەموو وێنە بچووکەکان
+    document.querySelectorAll('.thumbnail').forEach(thumb => {
+        thumb.classList.remove('active');
+    });
+    // زیادکردنی کلاسی چالاک بۆ وێنە بچووکی هەڵبژێردراو
+    thumbnail.classList.add('active');
+}
+
+// زیادکردنی ژمارەی بەرهەم
+function increaseQuantity() {
+    let qty = document.getElementById('quantity');
+    qty.value = parseInt(qty.value) + 1;
+}
+
+// کەمکردنەوەی ژمارەی بەرهەم
+function decreaseQuantity() {
+    let qty = document.getElementById('quantity');
+    if (qty.value > 1) qty.value = parseInt(qty.value) - 1;
+}
+
+// داخستنی مۆدەڵ کاتێک کرتە لە دەرەوەی دەکرێت
+window.onclick = function(event) {
+    if (event.target == document.getElementById('quickViewModal')) {
+        closeQuickView();
+    }
+}
+
+
+
+
+
+
+
+
+
